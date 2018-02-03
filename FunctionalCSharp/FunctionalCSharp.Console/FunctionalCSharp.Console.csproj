@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FunctionalCSharp.Core\FunctionalCSharp.Core.csproj">
+      <Project>{2267988a-6b5e-4662-a00f-43a7486d8cdd}</Project>
+      <Name>FunctionalCSharp.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
