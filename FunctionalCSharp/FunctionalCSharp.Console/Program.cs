@@ -17,6 +17,10 @@ namespace FunctionalCSharp.Console
                     select (i.First + j.First + k.First) * (i.Second + j.Second + k.Second) + "";
             System.Console.WriteLine(q.Return());
 
+            // List Monad
+            ListMonad<int> listMonad = new ListMonad<int> { 1, 3, 5, 7, 9 };
+            System.Console.WriteLine(listMonad.Combine((m1, m2) => m1 + m2, new Optional<int>(2)).Return());
+
             // Fixed Combinator
             var fac = Combinator.Fix<int, int>(f => x => x <= 1 ? 1 : x * f(x - 1));
             var fib = Combinator.Fix<int, int>(f => x => x <= 1 ? 1 : f(x - 1) + f(x - 2));

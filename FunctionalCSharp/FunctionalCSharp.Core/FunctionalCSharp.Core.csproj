@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Combinator.cs" />
     <Compile Include="IMonad`T`.cs" />
+    <Compile Include="ListMonad.cs" />
     <Compile Include="Optional`T`.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
