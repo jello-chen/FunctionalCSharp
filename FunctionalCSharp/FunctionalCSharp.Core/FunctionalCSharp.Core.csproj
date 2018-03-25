@@ -44,7 +44,18 @@
     <Compile Include="IMonad`T`.cs" />
     <Compile Include="ListMonad.cs" />
     <Compile Include="Optional`T`.cs" />
+    <Compile Include="Parser\CharParsers.cs" />
+    <Compile Include="Parser\MiniMLParserFromString.cs" />
+    <Compile Include="Parser\MiniMLParsers.cs" />
+    <Compile Include="Parser\ParserCombinatorExtensions.cs" />
+    <Compile Include="Parser\ParserCombinatorsMonad.cs" />
+    <Compile Include="Parser\Parsers`T`.cs" />
+    <Compile Include="Parser\Result.cs" />
+    <Compile Include="Parser\Term.cs" />
+    <Compile Include="Parser\TermStringBuilder.cs" />
+    <Compile Include="Parser\TermVisitor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
